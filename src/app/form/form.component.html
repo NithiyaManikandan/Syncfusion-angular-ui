@@ -1,0 +1,73 @@
+<br /><br />
+<div>
+  <button class="btn" ejs-button [routerLink]="['grid']">view table</button>
+</div>
+<br />
+<form class="form-horizontal" [formGroup]="form">
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="name" class="control-label required">Name</label>
+      <input
+        class="e-input"
+        type="text"
+        placeholder="Enter Name"
+        formControlName="name"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="email" class="control-label required">Email</label>
+      <input
+        class="e-input"
+        type="text"
+        placeholder="Enter Email"
+        formControlName="email"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="password" class="control-label required">Salary</label>
+      <input
+        class="e-input"
+        type="salary"
+        placeholder="Enter salary"
+        formControlName="salary"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="password" class="control-label required">Game</label>
+      <ejs-dropdownlist
+        id="ddlelement"
+        [dataSource]="data"
+        formControlName="game"
+        placeholder="Select a game"
+      ></ejs-dropdownlist>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="password" class="control-label required">DOB</label>
+      <ejs-datepicker
+        [value]="dateValue"
+        formControlName="dob"
+        placeholder="Enter date"
+      ></ejs-datepicker>
+    </div>
+  </div>
+  <br />
+  <button
+    class="btn btn-primary"
+    ejs-button
+    (click)="onSubmit()"
+    [disabled]="!form.valid"
+  >
+    submit</button
+  >&nbsp;
+  <button class="btn" ejs-button (click)="reset()">reset</button>
+</form>
+
+<app-toast *ngIf="formSumitAttempt"></app-toast>

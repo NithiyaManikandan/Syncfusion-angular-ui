@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "name": "nithu",
+      "email": "nithu@gmail.com",
+      "salary": "14000",
+      "game": "Tennis",
+      "dob": "2000-10-02T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "name": "kavi",
+      "email": "kavi@gmail.com",
+      "salary": "60000",
+      "game": "Snooker",
+      "dob": "2000-03-06T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "name": "sanju",
+      "email": "sanju@gmail.com",
+      "salary": "50000",
+      "game": "Cricket",
+      "dob": "2000-04-08T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "name": "lkjhgf",
+      "email": "niii@gmail.com",
+      "salary": "8000",
+      "game": "Tennis",
+      "dob": "2001-02-06T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "nuvv",
+      "email": "nvnf@gmail.com",
+      "salary": "45999",
+      "game": "Rugby",
+      "dob": "2005-06-06T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "name": "fnvfn",
+      "email": "nsbdb@gmail.com",
+      "salary": "56990",
+      "game": "Football",
+      "dob": "2001-02-02T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "name": " nmcvjfvn",
+      "email": "dnbdn@gmail.com",
+      "salary": "98984",
+      "game": "Tennis",
+      "dob": "2023-05-18T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "name": "cbdajcs",
+      "email": "ncjsncjs@gmail.com",
+      "salary": "98999",
+      "game": "Rugby",
+      "dob": "2023-05-01T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "name": "cbdajcs",
+      "email": "ncjsncjs@gmail.com",
+      "salary": "98999",
+      "game": "Rugby",
+      "dob": "2023-05-01T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "name": "djvjdljid",
+      "email": "jhg@gmail.com",
+      "salary": "34000",
+      "game": "Cricket",
+      "dob": "2005-06-06T18:30:00.000Z",
+      "id": 10
+    },
+    {
+      "name": "djvjdljid",
+      "email": "jhg@gmail.com",
+      "salary": "34000",
+      "game": "Cricket",
+      "dob": "2005-06-06T18:30:00.000Z",
+      "id": 11
+    },
+    {
+      "name": "djvjdljid",
+      "email": "jhg@gmail.com",
+      "salary": "34000",
+      "game": "Cricket",
+      "dob": "2005-06-06T18:30:00.000Z",
+      "id": 12
+    },
+    {
+      "name": "Navin",
+      "email": "nivin@gmail.com",
+      "salary": "89000",
+      "game": "Rugby",
+      "dob": "2023-05-10T18:30:00.000Z",
+      "id": 13
+    }
+  ]
+}

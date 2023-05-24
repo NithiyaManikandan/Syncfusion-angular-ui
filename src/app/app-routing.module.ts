@@ -5,6 +5,7 @@ import { GridComponent } from './grid/grid.component';
 import { FileViewerComponent } from './file-viewer/file-viewer.component';
 import { FormComponent } from './form/form.component';
 import { ChartComponent } from './chart/chart.component';
+import { ScedulerComponent } from './sceduler/sceduler.component';
 
 const routes: Routes = [
   {
@@ -24,9 +25,13 @@ const routes: Routes = [
     component: FileViewerComponent,
   },
   {
-    path:'chart',
-    component:ChartComponent
-  }
+    path: 'chart',
+    component: ChartComponent,
+  },
+  {
+    path: 'scedule',
+    component: ScedulerComponent,
+  },
 ];
 
 @NgModule({

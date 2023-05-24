@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PostService } from '../service/post.service';
+import { FormValidators } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-form',
@@ -17,11 +18,11 @@ export class FormComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      name: [null, Validators.required],
-      email: [null, [Validators.required, Validators.email]],
-      salary: [null, Validators.required],
-      game: [null, Validators.required],
-      dob: [null, Validators.required],
+      name: [null, [FormValidators.required]],
+      email: [null, [FormValidators.email]],
+      salary: [null, [FormValidators.required]],
+      game: [null, [FormValidators.required]],
+      dob: [null, [FormValidators.date]],
     });
   }
 
@@ -32,10 +33,16 @@ export class FormComponent implements OnInit {
       console.log(this.form.value);
       this.service.postData(this.form.value).subscribe();
     }
-    this.form.reset()
+    this.form.reset();
   }
   reset() {
     this.form.reset();
     this.formSumitAttempt = false;
   }
+
+  get name() { return this.form.get('name'); }
+  get email() { return this.form.get('email'); }
+  get salary() { return this.form.get('salary'); }
+  get game() { return this.form.get('game'); }
+  get dob() { return this.form.get('dob'); }
 }

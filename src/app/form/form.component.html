@@ -1,6 +1,8 @@
 <br /><br />
 <div>
-  <button class="btn" ejs-button [routerLink]="['grid']">view table</button>
+  <button class="btn" ejs-button [routerLink]="['grid']">view table</button
+  >&nbsp;
+  <button class="btn" ejs-button [routerLink]="['scedule']">scheduler</button>
 </div>
 <br />
 <form class="form-horizontal" [formGroup]="form">
@@ -14,6 +16,11 @@
         formControlName="name"
       />
     </div>
+    <div *ngIf="name?.errors">
+      <div *ngIf="name?.errors && name?.touched" class="e-error">
+        This field is required.
+      </div>
+    </div>
   </div>
   <div class="form-group">
     <div class="col-sm-12">
@@ -24,6 +31,11 @@
         placeholder="Enter Email"
         formControlName="email"
       />
+    </div>
+    <div *ngIf="email?.errors">
+      <div *ngIf="email?.errors && email?.touched" class="e-error">
+        This field is required.
+      </div>
     </div>
   </div>
   <div class="form-group">
@@ -36,6 +48,11 @@
         formControlName="salary"
       />
     </div>
+    <div *ngIf="salary?.errors">
+      <div *ngIf="salary?.errors && salary?.touched" class="e-error">
+        This field is required.
+      </div>
+    </div>
   </div>
   <div class="form-group">
     <div class="col-sm-12">
@@ -47,6 +64,11 @@
         placeholder="Select a game"
       ></ejs-dropdownlist>
     </div>
+    <div *ngIf="game?.errors">
+      <div *ngIf="game?.errors && game?.touched" class="e-error">
+        This field is required.
+      </div>
+    </div>
   </div>
   <div class="form-group">
     <div class="col-sm-12">
@@ -55,7 +77,13 @@
         [value]="dateValue"
         formControlName="dob"
         placeholder="Enter date"
+        format='yyyy-MM-dd'
       ></ejs-datepicker>
+    </div>
+    <div *ngIf="dob?.errors">
+      <div *ngIf="dob?.errors && dob?.touched" class="e-error">
+        This field is required.
+      </div>
     </div>
   </div>
   <br />

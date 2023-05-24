@@ -131,7 +131,11 @@ export const expectedValue1 = [
     address: 'xxxxxx',
     subtasks: [
       {
-        firstName: 'nithu',
+        firstName: 'Nithiya',
+        lastName: 'Mani',
+        email: 'nithiya@gmail.com',
+        mobile: 9876543210,
+        address: 'xxxxxx',
       },
     ],
   },
@@ -144,7 +148,11 @@ export const expectedValue1 = [
     address: 'ndkncljcpq',
     subtasks: [
       {
-        mark: 10,
+        firstName: 'Kavitha',
+        lastName: 'Ravi',
+        email: 'kavi@gmail.com',
+        mobile: 6383800828,
+        address: 'ndkncljcpq',
       },
     ],
   },

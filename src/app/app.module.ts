@@ -37,6 +37,15 @@ import {
 import { SidebarModule, TabModule } from '@syncfusion/ej2-angular-navigations';
 import { ToastModule } from '@syncfusion/ej2-angular-notifications';
 import { ToastComponent } from './toast/toast.component';
+import { ScedulerComponent } from './sceduler/sceduler.component';
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
+import {
+  DayService,
+  WeekService,
+  WorkWeekService,
+  MonthService,
+  AgendaService,
+} from '@syncfusion/ej2-angular-schedule';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +55,7 @@ import { ToastComponent } from './toast/toast.component';
     FormComponent,
     ChartComponent,
     ToastComponent,
+    ScedulerComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +70,8 @@ import { ToastComponent } from './toast/toast.component';
     ChartModule,
     SidebarModule,
     TabModule,
-    ToastModule
+    ToastModule,
+    ScheduleModule,
   ],
   providers: [
     PageService,
@@ -76,6 +87,11 @@ import { ToastComponent } from './toast/toast.component';
     TooltipService,
     DataLabelService,
     LineSeriesService,
+    DayService,
+    WeekService,
+    WorkWeekService,
+    MonthService,
+    AgendaService,
   ],
   bootstrap: [AppComponent],
 })

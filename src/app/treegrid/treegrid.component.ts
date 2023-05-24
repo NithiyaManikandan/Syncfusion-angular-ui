@@ -8,7 +8,14 @@ import { expectedValue1 } from 'src/response';
 })
 export class TreegridComponent implements OnInit {
   public data: object[] | undefined;
+  sortSettings: any | undefined;
   ngOnInit(): void {
     this.data = expectedValue1;
+    this.sortSettings = {
+      columns: [
+        { field: 'firstName', direction: 'Ascending' },
+        { field: 'empId', direction: 'Descending' },
+      ],
+    };
   }
 }
